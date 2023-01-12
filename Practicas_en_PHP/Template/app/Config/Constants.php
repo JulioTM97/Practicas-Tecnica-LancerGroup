@@ -92,3 +92,5 @@ define('EVENT_PRIORITY_NORMAL', 100);
  * @deprecated Use \CodeIgniter\Events\Events::PRIORITY_HIGH instead.
  */
 define('EVENT_PRIORITY_HIGH', 10);
+
+define('BASE_URL', "http://localhost/Prueba_Tecnica_Lancer/Practicas_en_PHP/Template");

@@ -22,7 +22,7 @@ class App extends BaseConfig
      * explicitly and never rely on auto-guessing, especially in production
      * environments.
      */
-    public string $baseURL = 'http://localhost/Prueba_Tecnica_Lancer/Practicas_en_PHP/Template';
+    public string $baseURL = BASE_URL;
 
     /**
      * Allowed Hostnames in the Site URL other than the hostname in the baseURL.
