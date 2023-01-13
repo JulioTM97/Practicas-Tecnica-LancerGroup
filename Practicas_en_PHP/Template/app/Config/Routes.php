@@ -31,7 +31,11 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->add('/autores', 'Home::autores');
-$routes->add('/autores/modificar_autores/(:num)', 'Home::modificarAutor/$1');
+$routes->add('/autores/detalles_autor/(:num)', 'Home::modificar_autor/$1');
+$routes->add('/autores/detalles_autor/', 'Home::agregar_autor');
+$routes->post('/autores/nuevo_autor/', 'Home::nuevo_autor');
+$routes->add('/autores/eliminar_autor/(:num)', 'Home::eliminar_autor/$1');
+$routes->post('/autores/actualizar_autor/', 'Home::actualizar_autor');
 
 /*
  * --------------------------------------------------------------------

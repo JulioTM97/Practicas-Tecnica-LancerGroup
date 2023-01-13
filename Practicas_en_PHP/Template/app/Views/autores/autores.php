@@ -7,6 +7,7 @@
 <?= $this->section("content")?>
     <div class="container bg-light">
         <h1 class="text-center main_color">Lista de autores</h1>
+        <a href=<?= BASE_URL."/autores/detalles_autor/";?> class="btn btn-primary my-2" role="button">Agregar Autor</a>
         <table class="table">
             <thead>
                 <tr>
@@ -23,9 +24,8 @@
                     <td><?= $key->apellido ?></td>
                     <td><?= $key->pais ?></td>
                     <td>
-                    <a href=<?= BASE_URL?> role="button" class="btn btn-primary btn-sm">Detalles</a>
-                    <a href=<?= BASE_URL."/autores/modificar_autores/".$key->autor_id?> role="button" class="btn btn-secondary btn-sm">Modificar</a>
-                    <a href=<?= BASE_URL?> role="button" class="btn btn-danger btn-sm">Eliminar</a>
+                    <a href=<?= BASE_URL."/autores/detalles_autor/".$key->autor_id?> role="button" class="btn btn-secondary btn-sm">Ver Detalles</a>
+                    <a href=<?= BASE_URL."/autores/eliminar_autor/".$key->autor_id?> role="button" class="btn btn-danger btn-sm">Eliminar</a>
                     </td>
                     </tr>
                 <?php endforeach; ?>

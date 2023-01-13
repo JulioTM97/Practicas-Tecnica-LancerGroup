@@ -1,0 +1,288 @@
+ERROR - 2023-01-13 02:05:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM a...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(10): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(21): App\Models\AutoresModel->selectAuthor('')
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->modificar_autor('')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-13 02:05:34 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\AutoresModel.php(10): CodeIgniter\Database\BaseConnection->query('SELECT * FROM autores WHERE autor_id = ')
+ 2 APPPATH\Controllers\Home.php(21): App\Models\AutoresModel->selectAuthor('C:\\wamp64\\www\\Prueba_Tecnica_Lancer\\Practicas_en_PHP\\Template')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->modificar_autor('C:\\wamp64\\www\\Prueba_Tecnica_Lancer\\Practicas_en_PHP\\Template')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 02:05:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM a...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM a...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM a...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(10): CodeIgniter\Database\BaseConnection->query('SELECT * FROM a...')
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(21): App\Models\AutoresModel->selectAuthor('')
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->modificar_autor('')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-13 02:05:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\AutoresModel.php(10): CodeIgniter\Database\BaseConnection->query('SELECT * FROM autores WHERE autor_id = ')
+ 2 APPPATH\Controllers\Home.php(21): App\Models\AutoresModel->selectAuthor('C:\\wamp64\\www\\Prueba_Tecnica_Lancer\\Practicas_en_PHP\\Template')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->modificar_autor('C:\\wamp64\\www\\Prueba_Tecnica_Lancer\\Practicas_en_PHP\\Template')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 03:18:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1 in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO aut...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO aut...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO aut...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO aut...')
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('Lorica', '', '')
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-13 03:18:49 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\AutoresModel.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO autores (nombre,apellido,pais) VALUES (Lorica,,)')
+ 2 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('Lorica', 'C:\\wamp64\\www\\Prueba_Tecnica_Lancer\\Practicas_en_PHP\\Template', 'C:\\wamp64\\www\\Prueba_Tecnica_Lancer\\Practicas_en_PHP\\Template')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 03:19:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Poido)' at line 1 in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO aut...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO aut...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO aut...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO aut...')
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('Lorica', 'Naro', 'Poido')
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-13 03:19:40 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Poido)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\AutoresModel.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO autores (nombre,apellido,pais) VALUES (Lorica,,Poido)')
+ 2 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('Lorica', 'Naro', 'Poido')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 03:19:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Poido)' at line 1 in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO aut...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO aut...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO aut...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO aut...')
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('Lorica', 'Naro', 'Poido')
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-13 03:19:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Poido)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\AutoresModel.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO autores (nombre,apellido,pais) VALUES (Lorica,,Poido)')
+ 2 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('Lorica', 'Naro', 'Poido')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 03:22:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ss)' at line 1 in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO aut...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO aut...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO aut...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO aut...')
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('sa', 'sa', 'ss')
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-13 03:22:35 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ss)' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\AutoresModel.php(15): CodeIgniter\Database\BaseConnection->query('INSERT INTO autores (nombre,apellido,pais) VALUES (sa,,ss)')
+ 2 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('sa', 'sa', 'ss')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 03:27:25 --> mysqli_sql_exception: Column 'pais' cannot be null in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(20): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('sa', 'sa', 'ss')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-13 03:27:25 --> Column 'pais' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `autores` (`nombre`, `apellido`, `pais`) VALUES (:nombre:, :apellido:, :pais:)', [...], false)
+ 2 APPPATH\Models\AutoresModel.php(20): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('sa', 'sa', 'ss')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 03:27:28 --> mysqli_sql_exception: Column 'pais' cannot be null in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(20): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('sa', 'sa', 'ss')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-13 03:27:28 --> Column 'pais' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `autores` (`nombre`, `apellido`, `pais`) VALUES (:nombre:, :apellido:, :pais:)', [...], false)
+ 2 APPPATH\Models\AutoresModel.php(20): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('sa', 'sa', 'ss')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 03:27:50 --> Call to a member function table() on null
+in APPPATH\Models\AutoresModel.php on line 20.
+ 1 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('sa', 'sa', 'ss')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 03:28:37 --> Call to a member function table() on null
+in APPPATH\Models\AutoresModel.php on line 20.
+ 1 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('aa', 'a', 'aa')
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 03:30:17 --> mysqli_sql_exception: Column 'pais' cannot be null in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(20): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('aa', 'a', 'aa')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-13 03:30:17 --> Column 'pais' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `autores` (`nombre`, `apellido`, `pais`) VALUES (:nombre:, :apellido:, :pais:)', [...], false)
+ 2 APPPATH\Models\AutoresModel.php(20): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('aa', 'a', 'aa')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 03:37:43 --> mysqli_sql_exception: Column 'pais' cannot be null in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(20): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('aa', 'a', 'aa')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-13 03:37:43 --> Column 'pais' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `autores` (`nombre`, `apellido`, `pais`) VALUES (:nombre:, :apellido:, :pais:)', [...], false)
+ 2 APPPATH\Models\AutoresModel.php(20): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('aa', 'a', 'aa')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 03:38:20 --> mysqli_sql_exception: Column 'pais' cannot be null in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(20): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('a', 'b', 'c')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-13 03:38:20 --> Column 'pais' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `autores` (`nombre`, `apellido`, `pais`) VALUES (:nombre:, :apellido:, :pais:)', [...], false)
+ 2 APPPATH\Models\AutoresModel.php(20): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('a', 'b', 'c')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 03:41:39 --> mysqli_sql_exception: Column 'pais' cannot be null in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('aa', 'a', 'aa')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-13 03:41:39 --> Column 'pais' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `autores` (`nombre`, `apellido`, `pais`) VALUES (:nombre:, :apellido:, :pais:)', [...], false)
+ 2 APPPATH\Models\AutoresModel.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('aa', 'a', 'aa')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 03:41:56 --> mysqli_sql_exception: Column 'pais' cannot be null in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `au...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `au...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `au...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `au...', Array, false)
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\AutoresModel.php(22): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('a', 'a', 'a')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-01-13 03:41:56 --> Column 'pais' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2294): CodeIgniter\Database\BaseConnection->query('INSERT INTO `autores` (`nombre`, `apellido`, `pais`) VALUES (:nombre:, :apellido:, :pais:)', [...], false)
+ 2 APPPATH\Models\AutoresModel.php(22): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\Home.php(37): App\Models\AutoresModel->insertAuthor('a', 'a', 'a')
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Home->nuevo_autor()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
