@@ -30,6 +30,8 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->add('/autores', 'Home::autores');
+$routes->add('/autores/modificar_autores/(:num)', 'Home::modificarAutor/$1');
 
 /*
  * --------------------------------------------------------------------
