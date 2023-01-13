@@ -286,3 +286,264 @@ in SYSTEMPATH\Database\BaseConnection.php on line 645.
  5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
  6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
  7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 16:00:15 --> mysqli_sql_exception: Unknown table 'biblioteca.libros' in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `lib...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `lib...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `lib...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `lib...')
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Database\Migrations\2023-01-13-153423_Libros.php(40): CodeIgniter\Database\Forge->dropTable('libros')
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MigrationRunner.php(877): App\Database\Migrations\Libros->down()
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(1)
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-01-13 16:00:40 --> mysqli_sql_exception: Unknown table 'biblioteca.libros' in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `lib...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `lib...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `lib...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `lib...')
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Database\Migrations\2023-01-13-153423_Libros.php(40): CodeIgniter\Database\Forge->dropTable('libros')
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MigrationRunner.php(877): App\Database\Migrations\Libros->down()
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(1)
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+CRITICAL - 2023-01-13 16:30:06 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:30:14 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:31:32 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:33:38 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:36:02 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:36:20 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:36:29 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:37:05 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:37:10 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:38:51 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:39:05 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:39:05 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 16:39:05 --> Class 'App\Controllers\LibrosModel' not found
+in APPPATH\Controllers\LibrosController.php on line 10.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->libros()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 17:05:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM l...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM l...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM l...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\LibrosModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM l...')
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\LibrosController.php(23): App\Models\LibrosModel->selectBook('#1')
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\LibrosController->modificar_libro('#1')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-13 17:05:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\LibrosModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM libros WHERE libro_id = #1')
+ 2 APPPATH\Controllers\LibrosController.php(23): App\Models\LibrosModel->selectBook('#1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->modificar_libro('#1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 17:06:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM l...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM l...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM l...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\LibrosModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM l...')
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\LibrosController.php(23): App\Models\LibrosModel->selectBook('#1')
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\LibrosController->modificar_libro('#1')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-13 17:06:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\LibrosModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM libros WHERE libro_id = #1')
+ 2 APPPATH\Controllers\LibrosController.php(23): App\Models\LibrosModel->selectBook('#1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->modificar_libro('#1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-01-13 17:07:51 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1 in C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT * FROM l...', 0)
+#1 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM l...')
+#2 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM l...')
+#3 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Models\LibrosModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM l...')
+#4 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\app\Controllers\LibrosController.php(23): App\Models\LibrosModel->selectBook('#1')
+#5 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(934): App\Controllers\LibrosController->modificar_libro('#1')
+#6 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+#7 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\wamp64\www\Prueba_Tecnica_Lancer\Practicas_en_PHP\Template\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-01-13 17:07:51 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 APPPATH\Models\LibrosModel.php(16): CodeIgniter\Database\BaseConnection->query('SELECT * FROM libros WHERE libro_id = #1')
+ 2 APPPATH\Controllers\LibrosController.php(23): App\Models\LibrosModel->selectBook('#1')
+ 3 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->modificar_libro('#1')
+ 4 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 17:55:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(640): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(830): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\LibrosController.php(33): CodeIgniter\Model->__call('updateLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->actualizar_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 17:55:43 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(640): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(830): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\LibrosController.php(33): CodeIgniter\Model->__call('updateLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->actualizar_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 17:57:25 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(640): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(830): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\LibrosController.php(33): CodeIgniter\Model->__call('updateLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->actualizar_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 17:57:58 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(640): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(830): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\LibrosController.php(33): CodeIgniter\Model->__call('updateLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->actualizar_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 18:01:57 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 882.
+ 1 SYSTEMPATH\Model.php(640): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(830): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\LibrosController.php(33): CodeIgniter\Model->__call('updateLibro', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->actualizar_libro()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 19:07:05 --> Invalid argument supplied for foreach()
+in APPPATH\Views\libros\detalles_libro.php on line 26.
+ 1 APPPATH\Views\libros\detalles_libro.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\libros\\detalles_libro.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\libros\\detalles_libro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('libros/detalles_libro', [], true)
+ 5 APPPATH\Controllers\LibrosController.php(33): view('libros/detalles_libro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->agregar_libro()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 19:11:14 --> Invalid argument supplied for foreach()
+in APPPATH\Views\libros\detalles_libro.php on line 26.
+ 1 APPPATH\Views\libros\detalles_libro.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Invalid argument supplied for foreach()', 'APPPATH\\Views\\libros\\detalles_libro.php', 26, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\libros\\detalles_libro.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('libros/detalles_libro', [], true)
+ 5 APPPATH\Controllers\LibrosController.php(33): view('libros/detalles_libro', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->agregar_libro()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 19:11:43 --> Call to a member function getAll() on null
+in APPPATH\Controllers\LibrosController.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->agregar_libro()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 19:12:01 --> Call to a member function getAll() on null
+in APPPATH\Controllers\LibrosController.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->agregar_libro()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 19:12:18 --> Call to a member function getAll() on null
+in APPPATH\Controllers\LibrosController.php on line 33.
+ 1 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\LibrosController->agregar_libro()
+ 2 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\LibrosController))
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-01-13 19:32:28 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\autores\detalles_autor.php on line 29.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1177): CodeIgniter\View\View->render('autores/detalles_autor', [], true)
+ 4 APPPATH\Controllers\AutoresController.php(22): view('autores/detalles_autor', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\AutoresController->modificar_autor('5')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AutoresController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

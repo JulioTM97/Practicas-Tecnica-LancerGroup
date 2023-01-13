@@ -26,7 +26,7 @@
             </div>
             <div class="input-group mb-3">
                 <label for="cantidad" class="form-label col-2">Cantidad de Libros: </label>
-                <input id="cantidad" type="text" class="form-control col-10" readonly>
+                <input id="cantidad" type="text" class="form-control col-10" readonly value=<?= $cantidad_libros[0]->book_count;?>>
             </div>
             <div class="input-group mb-3 justify-content-center">
                 <?php if ($estado == "agregando"): ?>
@@ -36,7 +36,7 @@
                 <?php endif ?>
                 <a id="btn_volver" href=<?= BASE_URL?>/autores role="button" class="btn btn-secondary btn-sm">Volver</a>
             </div>
-            <input id="autor_id" type="text" class="form-control" name="autor_id" value=<?= $data[0]->autor_id; ?>>
+            <input id="autor_id" hidden type="text" class="form-control" name="autor_id" value=<?= $data[0]->autor_id; ?>>
         </form>
     </div>
 <?= $this->endSection()?>

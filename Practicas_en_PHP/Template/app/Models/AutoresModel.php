@@ -22,6 +22,12 @@ class AutoresModel extends Model {
         return $this->db->table("autores")->insert($data);
     }
 
+    public function booksCount($author_id){
+        $query = $this->db->query("SELECT COUNT(libro_id) AS book_count From libros where autor_id = $author_id");
+        return $query->getResult();
+
+    }
+
     public function updateAuthor($name,$lastName,$country,$id) {
         $query = $this->db->query("UPDATE autores SET nombre='$name', apellido='$lastName', pais='$country' WHERE autor_id='$id'");
     }

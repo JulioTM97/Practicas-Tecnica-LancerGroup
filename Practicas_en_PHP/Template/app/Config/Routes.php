@@ -30,12 +30,18 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->add('/autores', 'Home::autores');
-$routes->add('/autores/detalles_autor/(:num)', 'Home::modificar_autor/$1');
-$routes->add('/autores/detalles_autor/', 'Home::agregar_autor');
-$routes->post('/autores/nuevo_autor/', 'Home::nuevo_autor');
-$routes->add('/autores/eliminar_autor/(:num)', 'Home::eliminar_autor/$1');
-$routes->post('/autores/actualizar_autor/', 'Home::actualizar_autor');
+$routes->add('/autores', 'AutoresController::autores');
+$routes->add('/autores/detalles_autor/(:num)', 'AutoresController::modificar_autor/$1');
+$routes->add('/autores/detalles_autor/', 'AutoresController::agregar_autor');
+$routes->post('/autores/nuevo_autor/', 'AutoresController::nuevo_autor');
+$routes->add('/autores/eliminar_autor/(:num)', 'AutoresController::eliminar_autor/$1');
+$routes->post('/autores/actualizar_autor/', 'AutoresController::actualizar_autor');
+$routes->add('/libros', 'LibrosController::libros');
+$routes->add('/libros/eliminar_libro/(:num)', 'LibrosController::eliminar_libro/$1');
+$routes->add('/libros/detalles_libro/(:num)', 'LibrosController::modificar_libro/$1');
+$routes->add('/libros/detalles_libro/', 'LibrosController::agregar_libro');
+$routes->post('/libros/actualizar_libro/', 'LibrosController::actualizar_libro');
+$routes->post('/libros/nuevo_libro/', 'LibrosController::nuevo_libro');
 
 /*
  * --------------------------------------------------------------------

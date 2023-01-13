@@ -31,7 +31,5 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
-
-
     </div>
 <?= $this->endSection()?>

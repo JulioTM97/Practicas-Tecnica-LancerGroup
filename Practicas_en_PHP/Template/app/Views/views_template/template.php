@@ -28,7 +28,7 @@
                     <a class="nav-link" href=<?= BASE_URL;?>/autores>Autores</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Libros</a>
+                    <a class="nav-link" href=<?= BASE_URL;?>/libros>Libros</a>
                     </li>
                 </ul>
                 </div>

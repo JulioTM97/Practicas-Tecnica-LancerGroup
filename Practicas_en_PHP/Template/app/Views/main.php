@@ -11,7 +11,7 @@
             <div class="card-body">
                 <h5 class="card-title">Accede a la base de datos de autores</h5>
                 <p class="card-text">Con el enlace siguiente podrás consultar el listado de autores que se encuentran en el sistema, donde podrás agregar más autores, modificar los existentes o eliminar alguno.</p>
-                <a href="#" class="btn btn-primary">Ver Autores</a>
+                <a class="btn btn-primary" href=<?= BASE_URL;?>/autores>Ver Autores</a>
             </div>
         </div>
     </div>
@@ -22,7 +22,7 @@
             <div class="card-body">
                 <h5 class="card-title">Accede a la base de datos de Libros</h5>
                 <p class="card-text">Con el enlace siguiente podrás consultar el listado de libros que se encuentran en el sistema, donde podrás agregar más libros, modificar los libros existentes o eliminar alguno.</p>
-                <a href="#" class="btn btn-primary">Ver Libros</a>
+                <a class="btn btn-primary" href=<?= BASE_URL;?>/libros>Ver Libros</a>
             </div>
         </div>
     </div>
